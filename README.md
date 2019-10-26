@@ -1,8 +1,8 @@
 ## Phase 2 Week 1
 
-##### Welcome to my repository of the first week of Phase 2 during my stay in Hacktiv8
+### Welcome to my repository of the first week of Phase 2 during my stay in Hacktiv8
 
-##### Hope you enjoy!
+### Hope you enjoy!
 
 
 
