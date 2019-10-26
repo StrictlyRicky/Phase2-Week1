@@ -10,7 +10,7 @@
 
 [Group Project](https://github.com/StrictlyRicky/Phase2-Week1/tree/master/Group%20Project)
 
-[Semantic Web (Portfolio)](https://github.com/StrictlyRicky/Phase2-Week1/tree/master/Semantic Web (Portfolio))
+[Semantic Web (Portfolio)](https://github.com/StrictlyRicky/Phase2-Week1/tree/master/Semantic%20Web%20(Portfolio))
 
 [Hacktiv Git](https://github.com/StrictlyRicky/Phase2-Week1/tree/master/hacktivgit)
 
