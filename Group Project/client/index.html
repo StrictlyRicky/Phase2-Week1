@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="351010311828-11to195r2f1cik3pdfftd4b8guh5k467.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Dota Dum Dum</title>
+    <style>
+        .bg-black {
+            background-color: black
+        }
+        .jumbotron {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+                <button class="btn btn-dark" id="show">Link</button>
+                <button class="btn btn-dark" id="show_starred">Link</button>
+                <button class="btn btn-dark" id="hide">Link</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-light">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5IlNrE022r5fVK87sVfnvhVGGEVmFBxffwOMJL3Cfpcz_1W21" style="max-height: 50px;">
+                <button class="navbar-toggler bg-black" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="col-10"></span>
+                <div class="navbar-right">
+                    <div class="g-signin2" data-onsuccess="onSignIn" id="signInButton"></div>
+                    <button class="btn btn-primary" onclick="signOut();" id="signOutButton">Sign out</button>
+                </div>
+            </nav>
+        </div>
+
+    <div class="container justify-content-center" id="list" style="margin-top:30px">
+        <div class="row">
+            <div>
+                <form class="form-inline p-4 card" id="mood-form">
+                    <div class="card-body">
+                        <input type="mood" class="form-control mb-2 mr-sm-2" id="mood" placeholder="How are you feeling?">
+                        <button type="submit" class="btn btn-primary mb-2" id="submit-button" data-toggle="modal" data-target="#recommendedModal">Submit</button>
+                        <br>
+                    </div>
+                </form>
+            </div>
+            <div class="card-columns m-5" id="heroes">
+            </div>
+            <div class="jumbotron " id="recommendedHero""></div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+
+    <script src="scripts/google.js"></script>
+    <script src="scripts/script.js"></script>
+    </body>
+</html>

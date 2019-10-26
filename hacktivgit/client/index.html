@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="351010311828-11to195r2f1cik3pdfftd4b8guh5k467.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>HacktivGit</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <img src="https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1482132470/vfmmn0twb17nn2epblee.png" width="100" class="img-thumbnail img-fluid">
+    </nav>
+
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <button class="btn-primary" id="show">Show All Repo</button>
+                <button class="btn-primary" id="show_starred">Show Starred</button>
+                <button class="btn-primary" id="hide">Hide</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="col-8"></span>
+            <div class="g-signin2" data-onsuccess="onSignIn" id="signInButton"></div>
+            <button class="btn btn-primary" onclick="signOut();" id="signOutButton">Sign out</button>
+        </nav>
+    </div>
+
+    <div class="container" style="margin-top:30px" id="container3"></div>
+    <div class="container" style="margin-top:30px" id="container2"></div>
+    <div class="container" style="margin-top:30px" id="container">
+        <div class="row">
+            <div class="col-3 bg-light card m-3" id='ViewAll'>
+                <h2 class="m-3">Repositories</h2>
+                <form id="NewForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="name"placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Description">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form><br>
+                <ol id="AllRepo" class="list-unstyled list-group" style="max-height: 600px;margin-bottom: 10px;overflow:scroll;-webkit-overflow-scrolling: touch;"></ol>
+            </div>
+
+            <div class="col-3 bg-light card m-1" id='ViewAll'>
+                    <form method="POST" id="FindUsernameForm" class="">
+                        <div class="form-group m-3">
+                            <label>Username</label>
+                            <input type="username" class="form-control" id="username" placeholder="Username">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <ol id="FoundResult" class="list-unstyled list-group" style="max-height: 500px;margin-bottom: 10px;overflow:scroll;-webkit-overflow-scrolling: touch;"></ol>
+            </div>
+
+            <div class="col bg-light card m-1" id='API'>
+                <iframe src="README.html" style="border:none" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="google.js"></script>
+</body>
+<footer class="page-footer font-small special-color-dark pt-4">
+    <div class="text-center text-light py-3 bg-dark">Infinite Fox
+    </div>
+</footer>
+</html>

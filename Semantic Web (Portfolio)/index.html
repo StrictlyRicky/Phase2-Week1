@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Semantic Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+    <body>
+        <div>
+            <p class="h4"><img src="assets/phoenix.png" alt="Phoenix" class="m-3" width="100">The Phoenix</p>
+        </div>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home">
+                <div class="bd-example" style="padding: 200px">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://wallpaper.wiki/wp-content/uploads/2017/05/Glass-dark-cross-background-1920x1080.jpg" alt="Glass Cross" class="d-block w-100 rounded">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpaperplay.com/walls/full/c/c/b/13700.jpg" alt="John Wick" class="d-block w-100 rounded">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://wallpapersite.com/images/pages/pic_w/16675.jpg" alt="Venom" class="d-block w-100 rounded">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-pane fade p-4" id="nav-profile">
+                <div class="card mx-auto p-4" style="width: 18rem;">
+                    <img src="https://avatarfiles.alphacoders.com/102/102172.jpg" alt="Avatar" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Anonymous</h5>
+                        <p class="card-text">I am whoever you want me to be, to do whatever you want me to do, and for whatever price you want to pay.</p>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://www.trzcacak.rs/myfile/detail/227-2271406_black-social-media-icon-png.png" alt="Social Media Icons" width="200">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade p-4" id="nav-contact">
+                <div class="mapouter mx-auto p-4 m-5">
+                    <div class="gmap_canvas">
+                        <iframe width="945" height="648" id="gmap_canvas" src="https://maps.google.com/maps?q=bermuda%20triangle&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
